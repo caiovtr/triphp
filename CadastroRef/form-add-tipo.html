@@ -14,25 +14,21 @@
     <div class="container-fluid text-center">
         <div class="jumbotron">
             <h1 class="display-4">TABELA REFRIGERANTES</h1>
-            <img src="./assets/Refrigerante.png" alt="refri">
         </div>
     </div>
     <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <h4>Cadastrar</h4>
-            <a class="btn btn-primary" href="./form-add-ref.php">Acessar ></a>
-          </div>
-          <div class="col-sm">
-            <h4>Listar</h4>
-            <a class="btn btn-primary" href="./exibirRefrigerantes.php">Acessar ></a>
-          </div>
-          <div class="col-sm">
-            <h4>Pesquisar</h4>
-            <a class="btn btn-primary" href="./pesquisarRefri.html">Acessar ></a>
-          </div>
+        <div class="jumbotron">
+            <p class="h3 text-center">Cadastro de tipos de refrigerantes (cola, guaraná, uva...)</p>
         </div>
-      </div>
-      <hr>
+        <form action="addTipo.php" method="post">
+            <div class="form-group">
+                <label for="descricao">Descrição: </label>
+                <input type="text" class="form-control" name="descricao" id="descricao" required minlength="2" placeholder="Informe a descricao do tipo">
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit" value="Submit">Enviar</button>
+            <a class="btn btn-danger" href="index.html">Cancelar</a>
+            
+          </form>
+    </div>
 </body>
 </html>
